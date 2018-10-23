@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommistry_Storage>
+            <version>1.0.0</version>
+        </Ecommistry_Storage>
+    </modules>
+    <global>
+        <models>
+            <cms>
+                <rewrite>
+                    <wysiwyg_images_storage>Ecommistry_Storage_Model_Cms_Wysiwyg_Images_Storage</wysiwyg_images_storage>
+                </rewrite>
+            </cms>
+            <core>
+                <rewrite>
+                    <file_validator_image>Ecommistry_Storage_Model_Core_File_Validator_Image</file_validator_image>
+                </rewrite>
+            </core>
+        </models>
+    </global>
+    <adminhtml>
+        <cms>
+            <browser>
+                <extensions>
+                    <allowed>
+                        <pdf>1</pdf>
+                    </allowed>
+                    <image_allowed>
+                        <pdf>1</pdf>
+                    </image_allowed>
+                </extensions>
+            </browser>
+        </cms>
+    </adminhtml>
+</config> 
